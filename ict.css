@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),
+    rgba(4,9,30,0.7)),url(background.jpeg);
+      background-size:cover;
+    position:relative ;
+ 
+} 
+nav{
+display:flex;
+padding: 2% 6%;
+justify-content: space-between;
+align-items: centers;
+}
+nav img{
+width: 150px;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration:none ;
+    font-size: 13 px;
+}
+.nav-links ul li ::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: red ;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+     
+}
+.nav-links ul li :hover::after{
+       width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: white;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p1{
+     margin: 10px 0px 40 px;
+     font-size: 14px;
+     color: aliceblue ;
+
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: grey;
+    border: 1px solid white ;
+    padding: 12px 34px;
+    background: transparent;
+    position: relative;
+    cursor:pointer;
+
+}
+.hero-btn:hover{
+    border: 1px solid red;
+    background:red;
+    transition:1s ;
+     
+}
+/*-----biodata----*/
+.biodata{
+    width: 80%;
+    margin: auto;
+    text-align:center ;
+    padding-top :100px; 
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p1{
+    color: grey;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding:10px;
+}
+
+/* footer */
+
+.footer{
+    width:100%;
+    text-align: center;
+    padding:30px 0;
+
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer p4{
+    font-size: 12px;
+    color: grey;
+}
+
+/*-----now for personel page----*/
+
+.sub-header{
+height:50vh;
+width: 100%;
+background-image: linear-gradient(rgba(4,9,30,0.7)
+,rgba(4,9,30,0.7)),url( moon.jpeg);
+background-position: center;
+background-size:cover ;
+text-align: center;
+color: white;
+
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.about-me{
+    width: 80%;
+    margin: auto;
+    padding: top 80px; ;
+    padding-bottom: 50px;
+}
+.about-col{
+    flex-basis: 48%;
+    padding:30px 2px;
+
+}
+.about-col img{
+    width: 50%;
+float: left;
+}
+.about-me h7{
+    font-size: 100px;
+}
+.longtermgoals{
+     margin-bottom: 5%;
+    display:left;
+    justify-content: space-between;
+}
+.longtermgoals h7{
+       font-size: 100px;
+      margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.longtermgoals p10{
+text-align: center;
+}
+.course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+.skill-section{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: black;
+}
+.skills-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: black;
+}
+skill {
+    margin-bottom: 25px;
+}
+.skill h3 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: grey;
+}
+/*progbar */
+
+.Progbar{
+    background-color: white;
+    border-radius: 5px;
+    height: 25px;
+    line-height: 25px;
+    padding-right: 25px;
+    text-align: right;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,01.1em);
+
+}
+
+/* for each bar seprately*/
+
+#html-bar{
+    width: 85%;
+    background-color:yellow;
+    transition: width 1s ease-in-out;
+}
+
+#c1bar{
+  width: 90%;
+  background-color: skyblue;
+  transition: width 1s ease-in-out;
+}
+
+#java{
+    width: 65%;
+    background-color: greenyellow;
+    transition: width 1s ease-in-out;
+}
+#pybar{
+    width: 85%;
+    background-color: mediumvioletred;
+    transition: width 1s ease-in-out;
+}
+#cbar{
+    width: 70%;
+    background-color: salmon;
+    transition: width 1s ease-in-out;
+}
+.skill-sec{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 20px;
+}
+.skill-sec h2{
+    text-align: center;
+}
+
+.contactus{
+    width: 80%;
+    margin: auto;
+
+}
+.contactcol{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contactcol div{
+display: flex;
+align-items: center;
+margin-bottom: 40px;
+
+}
+.contactcol div p{
+    padding: 0;
+}
+.contactcol div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+}
+.contactcol div .fa{
+    margin: 10px;
+    margin-right: 30px;
+    font-size: 28px;
+    font-weight: 400;
+}
+.contactcol input, .contactcol textarea{
+width: 100%;
+padding: 15px;
+margin-bottom: 17px;
+outline: none;
+border: 1px solid grey;
+box-sizing: border-box;
+}
